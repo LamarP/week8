@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add to styles.css */
+
+/* Overriding Bootstrap button styles */
+.btn {
+    background-color: green !important; /* Contradicting Bootstrap's color */
+    border: 2px dashed red !important;  /* Changing border style */
+    color: white !important;            /* Ensuring text color is visible */
+    font-size: 20px !important;         /* Increasing font size */
+    padding: 15px 30px !important;      /* Changing padding */
+    border-radius: 0 !important;        /* Removing rounded corners */
+}
+
+/* Hover state for the button */
+.btn:hover {
+    background-color: darkgreen !important;
+    color: yellow !important;
+}

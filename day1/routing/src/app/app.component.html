@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" routerLink="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" routerLink="servers" class="nav-link">Servers</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" routerLink="users" class="nav-link">Users</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row" style="margin-top: 30vh;">
+  <div class="col-6">
+    <div class="list-group">
+      <a
+        [routerLink]="['/servers', server.id]"
+        class="list-group-item pointer"
+        *ngFor="let server of servers"
+      >
+        {{ server.name }}
+      </a>
+    </div>
+  </div>
+  <div class="col-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>
